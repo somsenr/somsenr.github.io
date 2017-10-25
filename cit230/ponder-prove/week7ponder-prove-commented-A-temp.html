@@ -4,36 +4,35 @@
         <meta charset="UTF-8">
         <title>week7-ponder-prove</title>
         <style type="text/css">
-            body {margin:0;}
-            header {border:solid thin; line-height:50%;margin-top:15px;}    
+            body {color:red;font-family:arial,helvetica;margin:0; background-image: url(../images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }
+            header {border:solid thin;}    
             
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
-            nav ol li {display:inline;padding:1em;}
+            nav ol li {float:left;margin-right:1.5em;list-style-position:inside;border:solid thin purple;}
             nav ul li {display:list-item;}
             
-            main b{color:red;font-size:36px;margin-left:50px;}
+/*           nav ol#rocks li {border:none;list-style-type:lower-roman;}*/
+            div#left-col{border-left-style:dotted;border-right-style:dotted;}
+                        
             main img {height:150px; width:125px;}
                        
             footer {color:rgb(0%,100%,0%);} 
             footer ul{margin-top:0;} 
-            footer ul li {display:inline;padding:1em;}
-           
+            footer ul li {display:inline;padding-right:1em;}
             h1 {color:green;text-align:center;font-family:cursive,arial;font-size:x-large;font-style:italic;font-variant:small-caps;font-weight: bold;}
             h1.dropcap::first-letter {font-weight: bold; font-size: 1.2em; color:yellow;}
-            
             h2{color:green;font-family:sans-serif;font-size:10px;border:solid thick; text-align:center;}
-           
             h4{color: green;}
-           
-            table {color:red; width:975px;border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;}
+           table {color:red; width:975px;border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;}
+           table:hover {width:75%;} 
             caption {font-size:1.5em;text-align:left;color:rgb(7,8,45)}   
             th {letter-spacing: -.25em;border:1px solid black;}
             td {text-decoration: line-through;}
-           
             dd {word-spacing:1.5em;}
-            
-            span.docintro{color:rgb(0,0,255);}           
-            
+            a:hover {font-weight:bold; color:green;}
+                    
+            span.docintro{color:rgb(0,0,255);}   
+           .dropcap::first-letter{color:purple;font-size:600%;}   
             .sitebranding{font-size:6px; background-color:aqua}               
             .firstsentence{font-weight:bold;}
             .fs2em {font-size:2em;}
@@ -45,7 +44,7 @@
 
             a:link{color:#000000}        
             a:visited {color:rgb(0%,100%,0%);} 
-            a:hover {background-color: white;} white
+            a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
             div#left-col{}
@@ -64,7 +63,7 @@
             div#right-col{background-color:green;}
             aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}			
+            body {background-color:#DDF; border: 1px solid blue;}			
 
             /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
         </style>    
@@ -76,9 +75,9 @@
             <p>(insert banner image)</p>
             <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
             <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
-        
-            
-            
+         <figure> <img src="images/rocks.png" alt="photo of rock city" title="this is a very solemn rock place" />
+                <figcaption>Camping in Rock City!</figcaption>
+            </figure>  
         </header>
         <!--<h3>(the nav section)</h3>-->
         <nav>
@@ -88,10 +87,10 @@
                 <li> <a href="rock-therapy.html">Rock Therapy</a> </li>
                 <li> <a href="rock-clothes.html">Rock Clothes</a></li>
                 <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
-                <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
+                <li> <a href="week7-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
             </ol>
             <!--comment out nav lists below-->
-            <h1>rock list</h1><br>
+            <!--<h1>rock list</h1><br>
             <ol id="rocks">
                 <li>Adams, Bruce</li>
                 <li>Brown, Lee
@@ -109,7 +108,7 @@
                 <dd>a powdery rock that makes into good stuff</dd>
                 <dt>css</dt>
                 <dd>a floury rock that makes the good stuff better</dd>
-            </dl>
+            </dl>-->
             </nav>
         <div id="left-col">
             <!--<h3>(the left column section)</h3>-->
@@ -127,7 +126,7 @@
             
             
             <br>
-            <h2>Schedule</h2>
+            <!--<h2>Schedule</h2>
             <table>
                 <caption>
                     Week6-rockers schedule
@@ -169,7 +168,7 @@
                     </tr>
                 </tfoot>
             </table>
-            <br>
+            <br>-->
         </main>
         <aside>
             <!--<h3>(the right column)</h3-->

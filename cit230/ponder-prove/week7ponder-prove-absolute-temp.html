@@ -45,17 +45,19 @@
 
             a:link{color:#000000}        
             a:visited {color:rgb(0%,100%,0%);} 
-            a:hover {background-color: white;} white
+            a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
+
+            div#left-col{margin-top:0%; width:15%; height:3000px; border:solid thin blue;float:left;}
             
-            .flex-container {display:flex;width: 100%;}
-			
-            .flex-item {width: 100%; border:solid thin; }
-			div#left-col {height:3000px;}
-			main {height:3000px;}
-			aside {height:3000px;}		
-			footer{border:solid medium black;text-align:center;}	
-            
+            div#left-col{margin-top:0%; width:15%; height:3000px; border:solid thin blue;float:left;}
+
+            main {margin-top:0%;width:70%;height:3000px;border:solid thin blue;float:left;}	
+
+            aside{position:absolute;right:0%;margin-top:0%; width:15%; height:3000px; border:solid thin blue;list-style:none;} 
+
+            footer {position:fixed; bottom:0px;width:100%;border:solid medium black;text-align:center;}		
+
             /*apply colors to look like ppt*/	
             header {background-color:#9F9;} 
             nav{background-color:yellow;}
@@ -111,8 +113,8 @@
                 <dd>a floury rock that makes the good stuff better</dd>
             </dl>-->
             </nav>
-        <div class="flex-container">
-        <div class="flex-item" id="left-col"><!--<h3>(the left column section)</h3>-->
+        <div id="left-col">
+            <!--<h3>(the left column section)</h3>-->
             <ul>
                 <li> <a href="rock-users.html">Rock Users</a> </li>
                 <li> <a href="the-agenda.html">Rock  Agenda</a> </li>
@@ -120,7 +122,7 @@
                 <li> <a href="rock-goals.html">Rock Goals</a> </li>
             </ul>
         </div>
-        <main class="flex-item">
+        <main>
             <!--<h3>(the middle column)</h3>-->
             <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
            
@@ -171,14 +173,13 @@
             </table>
             <br>-->
         </main>
-        <aside class="flex-item">
+        <aside>
             <!--<h3>(the right column)</h3-->
             <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
             <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
             <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
             <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
         </aside>
-        </div>
         <footer>
             <!--<h3>(the footer section)</h3>-->
             <ul>
@@ -186,7 +187,7 @@
                 <li class="fs2ex"><a href="../contacts1/contact-info.html">Contact Information</a></li>
                 <li class="fs24px"><a href="contacts2/contact-info.html">Contact Information</a></li>
                 <li class="fs120prcnt"><a href="contacts2/contact-info.html">Contact Information</a></li>
-                <li class="fs24pt"><a href="week7-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
+                <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
             </ul>
         </footer>
     </body>

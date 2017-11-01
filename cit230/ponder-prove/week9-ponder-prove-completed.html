@@ -2,18 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>week7-ponder-prove</title>
+        <title>week8-ponder-prove-completed</title>
         <style type="text/css">
-            body {margin:0;}
+        /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body {margin:0;}
             header {border:solid thin; line-height:50%;}    
-            
+
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
-            nav ol {text-align:center;}
-            nav ol li {display:inline;padding:1em;}
+            nav ol {text-align:center}
+            nav ol#rocks li {display:inline;padding:1em;}
             nav ul li {display:list-item;}
-            
+           
             main b{color:red;font-size:36px;margin-left:50px;}
-            main img {height:150px; width:125px;}
+            main img {height:20%; width:20%;}
                        
             footer {color:rgb(0%,100%,0%);} 
             footer ul{margin-top:0;} 
@@ -26,15 +26,15 @@
            
             h4{color: green;}
            
-            table {color:red; width:975px;border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;}
-            caption {font-size:1.5em;text-align:left;color:rgb(7,8,45)}   
+            table {color:red; width:50%;font-size:50%; border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;padding:1.5em;border-radius:4em 4em 4em 6em/4em 6em 8em 2em;transition-property: width;transition-duration:2s;}
+	        table:hover {width:75%;}
+            caption {font-size:1.5em;text-align:left;color:rgb(7,8,45)}
             th {letter-spacing: -.25em;border:1px solid black;}
             td {text-decoration: line-through;}
-           
             dd {word-spacing:1.5em;}
             
             span.docintro{color:rgb(0,0,255);}           
-            
+            .dropcap::first-letter{color:purple;font-size:600%;} 
             .sitebranding{font-size:6px; background-color:aqua}               
             .firstsentence{font-weight:bold;}
             .fs2em {font-size:2em;}
@@ -49,15 +49,16 @@
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
-            div#left-col{}
+            div#left-col{width:33%;height:3000px;float:left;}
 
-            main {}	
+            main {width:34%;height:3000px;float:left;}
 
-            aside{}  
+            aside{width:33%;height:3000px;list-style:none;float:left;}  
 
-            footer {}	
+            footer {clear:left;position:fixed;text-align:center;width:100%;bottom:0px;}
 
-            /*apply colors to look like ppt*/	
+            /*apply colors to look like ppt*/
+            
             header {background-color:#9F9;} 
             nav{background-color:yellow;}
             div#left-col{background-color:#F66;}
@@ -66,24 +67,30 @@
             aside{background-color:blue;}
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}			
-
-            /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
-        </style>    
+   
+<!--        <link href="../css/week9-completed.css" rel="stylesheet" type="text/css" >-->
+         </style>
+      
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript">swfobject.embedSWF("video/bird.swf", "bird", "400", "300", "8.0.0");</script>
+    
     </head>
     <body>
         <header>
             <!--<h3>(the header section)</h3>-->
             <h1 class="dropcap">The Rock Market</h1>
-            <p>(insert banner image)</p>
+<!--            <p>(insert banner image)</p>-->
             <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
             <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
-        
+            <figure> <img src="images/rocks.png" alt="photo of rock city" title="this is a very solemn rock place" />
+                <figcaption>Camping in Rock City!</figcaption>
+            </figure>
             
             
         </header>
         <!--<h3>(the nav section)</h3>-->
         <nav>
-            <ol>
+            <ol id="rocks">
                 <li> <a href="foods-using-rocks.html">Foods Using Rocks</a> </li>
                 <li> <a href="history-of-rocks.html">History of Rocks</a> </li>
                 <li> <a href="rock-therapy.html">Rock Therapy</a> </li>
@@ -91,9 +98,9 @@
                 <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
                 <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
             </ol>
-            <!--comment out nav lists below-->
-            <!--<h1>rock list</h1><br>
-            <ol id="rocks">
+            <!--comment out nav lists below--><!--
+            <h1>rock list</h1><br>
+            <ol>
                 <li>Adams, Bruce</li>
                 <li>Brown, Lee
                     <ul>
@@ -124,11 +131,14 @@
         <main>
             <!--<h3>(the middle column)</h3>-->
             <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
-           
+           <p> The <strong>Rock Market</strong> is an all-inclusive <em>bouquet</em> of &quot;rocks&quot; at their best. A participant can merely just dabble in any of  the assorted featured gems or can completely immerse into all of the luxurious benefits  from each of the market items. Whether your fancy be tasting a specialty rock  food or indulging in the exquisite rock jewelry or adorning those stylish rock  clothes, you will always be happy that you are considered among the &ldquo;rock elite<sup>1</sup>&rdquo;  among your friends and peers. Come join and begin your journey into rock  heaven! See you soon! </p>
+            <hr>
+            <figure><img src="images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks">
+                <figcaption class="dropcap">Rocks are great to view from a ship!</figcaption></figure>
             
             
-            <br>
-            <!--<h2>Schedule</h2>
+            <br><!--
+            <h2>Schedule</h2>
             <table>
                 <caption>
                     Week6-rockers schedule
@@ -178,6 +188,24 @@
             <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
             <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
             <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
+            <br>
+        <p id="bird">An animation of a bird looking for rocks</p>
+        <br>
+        <br>
+        <audio src="audio/test-audio.ogg" controls autoplay>
+            <p>This browser does not support our audio format.</p>
+        </audio>
+        <br>
+        <br>
+        <video src="video/puppy.mp4" 
+               poster="images/puppy.jpg" 
+               width="400" height="300" 
+               preload
+               controls
+               loop>
+            <p>A video of a puppy looking for rocks in the snow</p>
+        </video>
+            
         </aside>
         <footer>
             <!--<h3>(the footer section)</h3>-->

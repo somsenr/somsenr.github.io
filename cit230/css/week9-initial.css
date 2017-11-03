@@ -1,4 +1,4 @@
-            body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }
+            /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body{margin:0}
             header {border:solid thin; line-height:50%;}    
 
             
@@ -55,7 +55,6 @@
             /*apply colors to look like ppt*/
             
 
-/*
             header {background-color:#9F9;} 
             nav{background-color:yellow;}
             div#left-col{background-color:#F66;}
@@ -64,5 +63,29 @@
             aside{background-color:blue;}
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}			
-*/
  
+             {
+            div#left-col {
+                background-color: blue;
+               
+            }
+            main {
+                background-color: yellow;
+                
+            }
+            aside {
+                background-color: red;
+                
+            }     
+            nav {
+                background-color: purple;
+                }      
+            }
+        
+        {
+            nav ol li{font-size:.05em;font-weight:bold;}
+            div#left-col {height:20em;}
+            main {height:20em;}
+            aside {height:20em;}
+            footer {height:20em;}
+        }

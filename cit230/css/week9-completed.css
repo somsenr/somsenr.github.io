@@ -1,4 +1,4 @@
-            body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }
+            /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body{margin:0}
             header {border:solid thin; line-height:50%;}    
 
             
@@ -44,18 +44,17 @@
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
-            div#left-col{}
+            div#left-col{width:33%;height:3000px;float:left;}
 
-            main {}
+            main {width:34%;height:3000px;float:left;}
 
-            aside{}  
+            aside{width:33%;height:3000px;list-style:none;float:left;}  
 
             footer {clear:left;position:fixed;text-align:center;width:100%;bottom:0px;}
 
             /*apply colors to look like ppt*/
             
 
-/*
             header {background-color:#9F9;} 
             nav{background-color:yellow;}
             div#left-col{background-color:#F66;}
@@ -64,5 +63,29 @@
             aside{background-color:blue;}
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}			
-*/
  
+            @media screen and (max-width: 600px) {
+            div#left-col {
+                background-color: blue;
+               
+            }
+            main {
+                background-color: yellow;
+                
+            }
+            aside {
+                background-color: red;
+                
+            }     
+            nav {
+                background-color: purple;
+                }      
+            }
+        @media print
+        {
+            nav ol li{font-size:.05em;font-weight:bold;}
+            div#left-col {height:20em;}
+            main {height:20em;}
+            aside {height:20em;}
+            footer {height:20em;}
+        }

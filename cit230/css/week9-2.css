@@ -1,4 +1,4 @@
-            body{margin:0}
+            /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body{margin:0}
             header {border:solid thin; line-height:50%;}    
 
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
@@ -61,28 +61,3 @@
             footer{background-color:#0CF;}
             body {background-color:#DDF; border: 1px solid blue;}			
  
-@media screen and (max-width: 600px) {
-    div#left-col {
-        background-color: blue;
-        width:33%;
-    }
-    main {
-        background-color: yellow;
-        width:34%;
-    }
-    aside {
-        background-color: red;
-        width:33%;
-    }     
-    nav {
-        background-color: purple;
-    }      
-}
-@media print
-{
-    nav ol li{font-size:.05em;font-weight:bold;}
-    div#left-col {height:20em;}
-    main {height:20em;}
-    aside {height:20em;}
-    footer {height:20em;}
-}

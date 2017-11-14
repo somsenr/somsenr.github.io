@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week10-ponder-prove-completed-js</title>
+    <link href="../css/week10-temp.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function myVerify() {
+            document.write("<h1>are you sure you want to submit this? if so hit the back button and then hit the submit button</h1>");
+        }
+
+        function mySendData() {
+            window.alert("This is the press 2 button and hello " + document.alertform.yourname.value);
+        }
+
+        function myEnterName() {
+            window.alert("Hello " + document.alertform.yourname.value);
+        }
+
+        function myDisplayName() {
+            window.alert("Hello " + document.alertform.yourname.value);
+        }
+
+        function myRollOver(obj) {
+            obj.innerHTML = "Goodbye " + document.alertform.yourname.value;
+        }
+
+        function myRollOut(obj) {
+            obj.innerHTML = "Hello " + document.alertform.yourname.value;
+        }
+
+        function myChangeFont() {
+            var x = document.getElementById("js"); // Find the element with id="js"
+            x.style.fontSize = "25px"; // Change the font size 
+            x.style.color = "#FF0000"; // Change the color
+        }
+
+        function myChangeColorIn(obj) {
+            obj.value = '';
+            obj.style.backgroundColor = "pink";
+            obj.style.color = "green";
+            obj.style.fontSize = "25px";
+        }
+
+        function myChangeColorOut(obj) {
+            obj.style.backgroundColor = "yellow";
+            obj.style.color = "red";
+            obj.style.fontSize = "8px";
+        }
+
+        function myNoCopy() {
+            window.alert("hey don't copy me!");
+        }
+
+        function myDoCopy() {
+            document.getElementById("demo").innerHTML = "You copied text!"
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="dropcap">The Rock Market</h1>
+        <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
+        <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/stones2133-w9.jpg">
+            <source media="(min-width:600px)" srcset="images/stones2163-w9.jpg">
+            <img src="images/rocks.png" alt="Flowers">
+        </picture>
+    </header>
+
+    <nav>
+        <ol id="rocks">
+            <li> <a href="foods-using-rocks.html">Foods Using Rocks</a> </li>
+            <li> <a href="history-of-rocks.html">History of Rocks</a> </li>
+            <li> <a href="rock-therapy.html">Rock Therapy</a> </li>
+            <li> <a href="rock-clothes.html">Rock Clothes</a></li>
+            <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
+            <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
+        </ol>
+    </nav>
+
+    <div id="left-col">
+        <ul>
+            <li> <a href="rock-users.html">Rock Users</a> </li>
+            <li> <a href="the-agenda.html">Rock  Agenda</a> </li>
+            <li> <a href="rock-location.html">Rock Location</a> </li>
+            <li> <a href="rock-goals.html">Rock Goals</a> </li>
+        </ul>
+        <h1>Email form test</h1>
+
+        
+        
+        <form name="alertform">
+        
+            <label for="yourname">Enter Your Full Name</label><br>
+            <input type="text" id ="yourname" name="yourname" placeholder="Please enter your full name" required>
+             <input type="button" value="Go" onClick="myEnterName()">
+  <br>
+        <br>         
+ <input type="button" Value="Press" onClick="myVerify()">
+        <br>
+        <br>
+        <input type="button" Value="Press 2" onClick="mySendData()">
+        <br>
+        <br>
+        
+<!--
+         <form name="alertform">
+            Enter your name:
+            <input type="text" name="yourname">
+            <input type="button" value="Go" onClick="myEnterName()">
+        </form>
+-->
+
+<!--
+        <li>
+                    <label for="eml">Email Address you are emailing:</label>
+                    <input type="email" id="eml" size="44" placeholder="Please enter the email address" required>
+                </li> 
+-->
+<br><br>
+        
+  <br>
+        <br>
+        <div onmouseover="myRollOver(this)" onmouseout="myRollOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Hello</div>
+        <br>
+        <br>
+          
+            
+            <input type="radio" id="radio1" name="radio" value="radio 1 value" checked>
+            <label for="radio1">Radio button 1</label><br>
+            <input type="radio" id="radio2" name="radio" value="radio 2 value">
+            <label for="radio2">Radio button 2</label>
+      
+<br>
+        <br>
+        
+            <input type="checkbox" id="checkbox" name="checkbox" value="checkbox value" checked>
+            <label for="checkbox">Checkbox</label>
+        
+<br><br>
+        
+            <label for="select">Select</label><br>
+            <select id="select" name="select">
+                <option value="select option 1">Select option 1</option>
+                <option value="select option 2" selected>Select option 2</option>
+                <option value="select option 3">Select option 3</option>
+            </select>
+       
+<br>
+        <br>
+        
+            <label for="textarea">Textarea</label><br>
+            <textarea cols="60" rows="5" name="textarea" id="textarea" onfocus="myChangeColorIn(this)" onblur="myChangeColorOut(this)">More text</textarea>
+            
+             
+ 
+<!--            <div onmouseover="myRollOver(this)" onmouseout="myRollOut(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Hello</div>-->
+            
+            
+            <br>
+        <br>     
+
+        <input type="button" Value="Verify" onClick="myVerify()">
+        <br>
+        <br>
+   <br>
+        <br>     
+       
+            <button type="submit" name="Submit" onClick="mySendData()">Submit</button>
+        </form>
+        </div>    
+    
+
+    <main>
+        <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
+        <p> The <strong>Rock Market</strong> is an all-inclusive <em>bouquet</em> of &quot;rocks&quot; at their best. A participant can merely just dabble in any of the assorted featured gems or can completely immerse into all of the luxurious benefits from each of the market items. Whether your fancy be tasting a specialty rock food or indulging in the exquisite rock jewelry or adorning those stylish rock clothes, you will always be happy that you are considered among the &ldquo;rock elite<sup>1</sup>&rdquo; among your friends and peers. Come join and begin your journey into rock heaven! See you soon! </p>
+        <hr>
+        <figure><img src="images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks">
+            <figcaption class="dropcap">Rocks are great to view from a ship!</figcaption>
+        </figure>
+        <br>
+    </main>
+
+    <aside>
+        <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
+        <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
+        <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
+        <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
+        <br>
+        <br>
+        <br>
+        <audio src="audio/test-audio.ogg" controls autoplay>
+            <p>This browser does not support our audio format.</p>
+        </audio>
+        <br>
+        <br>
+        <video src="video/puppy.mp4" poster="images/puppy.jpg" width="100%" height="300" preload controls loop>
+            <p>A video of a puppy looking for rocks in the snow</p>
+        </video>
+        <br>
+        <br>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&loop=1">
+        </iframe>
+        <br>
+        <br>
+    </aside>
+
+    <footer>
+        <!--<h3>(the footer section)</h3>-->
+        <ul>
+            <li class="fs2em"><a href="contactinfo.html">&copy;Contact Information</a></li>
+            <li class="fs2ex"><a href="../contacts1/contact-info.html">Contact Information</a></li>
+            <li class="fs24px"><a href="contacts2/contact-info.html">Contact Information</a></li>
+            <li class="fs120prcnt"><a href="contacts2/contact-info.html">Contact Information</a></li>
+            <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

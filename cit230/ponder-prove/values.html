@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Getting Values</title>
+ <style>
+  label, input{
+   display: block;
+  }
+
+  .hide{
+   display: none;
+  }
+ </style>
+</head>
+<body>
+<main id="main-content">
+ <form id="regForm">
+ <label for="firstname">Firstname:</label>
+  <input id="firstname" name="firstname">
+  <label for="lastname">Lastname:</label>
+  <input id="lastname" name="lastname">
+  <label for="email">Email Address:</label>
+  <input id="email" name="email" type="email">
+  <input type="submit" id="submit">
+ </form>
+
+ <section id="confirmation" class="hide"></section>
+ </main>
+ <!-- This document uses:
+1. the getElementById method
+2. an event listener
+3. a preventDefault method
+4. the querySelectorAll method
+5. array of inputs
+6. ES6 for loop
+7. let and const variable declarations
+8. push method for adding elements to an array
+9. ES6 deconstructor for breaking apart array elements and assigning each to a variable
+10. JS concatenation
+11. innerHTML method
+12. custom function creation
+13. hasAttribute, setAttribute, removeAttribute functions
+
+Note: This is not quite finished, as it needs an additional structure to fail if the form is not filled in.
+-->
+<script>
+ const submit = document.getElementById("submit");
+ const form = document.getElementById("regForm");
+ const confirmation = document.getElementById("confirmation");
+
+ submit.addEventListener("click", function(evt){
+  evt.preventDefault(); // stops submission of the form
+  const inputs = document.querySelectorAll("input");
+  const valuesArray = [];
+  for (let item of inputs){
+   valuesArray.push(item.value);
+  }
+
+  //console.log(inputs);
+  const [f, l, e] = valuesArray;
+  //console.log(f);
+  //console.log(l);
+  //console.log(e);
+  const message = "Thank you, "+f+" "+l+" for registering your email address: "+e+".";
+  confirmation.innerHTML = message;
+  hide();
+  //console.log('form hidden');
+
+ });
+
+  function hide(){
+  if(confirmation.hasAttribute("class")){
+   confirmation.removeAttribute("class");
+   form.setAttribute("class", "hide");
+  }
+ }
+    </script>
+
+<!--
+Resources:
+https://developer.mozilla.org/en-US/docs/Web/API/NodeList
+https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+https://github.com/mbeaudru/modern-js-cheatsheet/blob/master/readme.md#destructuring-objects-and-arrays
+-->
+</body>
+</html>

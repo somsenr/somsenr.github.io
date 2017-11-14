@@ -1,0 +1,136 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>week10-ponder-prove-js.html</title>
+        <script type="text/javascript">
+            function myFunction()
+            {
+                document.write("<h1>This is the press 1 button</h1>");
+
+            }
+            function myFunction1()
+            {
+                 window.alert("This is the press 2 button");
+
+            }
+
+            function myFunction2()
+            {
+              window.alert("Hello " + document.alertform.yourname.value);   
+            }
+
+            function myFunction3()
+            {
+                 window.alert("Hello " + document.alertform.yourname.value); 
+            }
+
+            function myFunction5a(obj)
+            {
+             obj.innerHTML="Goodbye";   
+            }
+
+            function myFunction5b(obj)
+            {
+                 obj.innerHTML="Hello";
+            }
+
+            function myFunction4()
+            {
+           var x=document.getElementById("js");    // Find the element with id="js"
+              x.style.fontSize="25px";  // Change the font size 
+               x.style.color="#FF0000"; // Change the color
+            }
+            
+            function myFunction6a(obj) {
+              obj.value='';
+                obj.style.backgroundColor="pink";
+                obj.style.color="green";
+                obj.style.fontSize="25px";
+                
+            }
+            
+           function myFunction6b(obj) {
+                obj.style.backgroundColor="yellow";
+                obj.style.color="red";
+                obj.style.fontSize="8px";
+                
+            } 
+            
+           function myFunction7() {
+            
+            window.alert("hey don't copy me!");    
+            }
+            
+            
+            
+            function myFunction10() {
+    document.getElementById("demo").innerHTML = "You copied text!"
+}
+        </script>
+
+    </head>
+    <body>
+        <br>
+        <br>
+        <br>
+	<br>
+	<input type="button" Value="Press" onClick="myFunction()">
+	<br>
+        <br>
+	<br>
+	<input type="button" Value="Press 2" onClick="myFunction1()">
+	<br>
+        <br>
+        <br>
+        <br>
+        <form name="alertform">
+            Enter your name:
+            <input type="text" name="yourname">
+            <input type="button" value= "Go" onClick="myFunction2()">
+        </form>
+        <br>
+        <br>
+        <br>
+        <p>
+            <a href="week9-ponder-prove.html">My Page</a>
+            <br />
+            <br />
+            <br />
+            <a href="week9-ponder-prove.html"
+               onMouseover="myFunction3()">
+                My Page 2</a>
+        </p>
+        <br />
+        <br />
+        <br />
+        <div onmouseover="myFunction5a(this)" onmouseout="myFunction5b(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Hello</div>
+        <br />
+        <br />
+        <br />
+        <p id="js">
+            This is my first time working with JavaScript
+        </p>
+        <button type="button" onClick="myFunction4()">Click Me!</button>
+        <br>
+        <br>
+        <p>Please enter data in the text box</p>
+        <input type="text" id="js2" onfocus="myFunction6a(this)" onblur="myFunction6b(this)">
+        <br>
+        <br>
+        <img src="../images/garden.jpg" oncopy="myFunction7()" alt="this is a try" title="this is a title try">
+        <br>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <br>
+        <input type="text" oncopy="myFunction10()" value="Try to copy this text">
+        <br>
+        <br>
+        
+        <p id="demo"></p>
+        <br>
+        <br>
+        
+    </body>
+</html>

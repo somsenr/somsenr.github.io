@@ -4,8 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week9-ponder-prove-completed</title>
-    <link href="../css/week9-3.css" rel="stylesheet" type="text/css">
+    <title>week10-ponder-prove-completed-js</title>
+    <link href="../css/week10-temp.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function myFunction() {
+            document.write("<h1>This is the press 1 button</h1>");
+        }
+
+        function myFunction1() {
+            window.alert("This is the press 2 button");
+        }
+
+        function myFunction2() {
+            window.alert("Hello " + document.alertform.yourname.value);
+        }
+
+        function myFunction3() {
+            window.alert("Hello " + document.alertform.yourname.value);
+        }
+
+        function myFunction5a(obj) {
+            obj.innerHTML = "Goodbye";
+        }
+
+        function myFunction5b(obj) {
+            obj.innerHTML = "Hello";
+        }
+
+        function myFunction4() {
+            var x = document.getElementById("js"); // Find the element with id="js"
+            x.style.fontSize = "25px"; // Change the font size 
+            x.style.color = "#FF0000"; // Change the color
+        }
+
+        function myFunction6a(obj) {
+            obj.value = '';
+            obj.style.backgroundColor = "pink";
+            obj.style.color = "green";
+            obj.style.fontSize = "25px";
+        }
+
+        function myFunction6b(obj) {
+            obj.style.backgroundColor = "yellow";
+            obj.style.color = "red";
+            obj.style.fontSize = "8px";
+        }
+
+        function myFunction7() {
+            window.alert("hey don't copy me!");
+        }
+
+        function myFunction10() {
+            document.getElementById("demo").innerHTML = "You copied text!"
+        }
+    </script>
 </head>
 
 <body>
@@ -14,11 +66,11 @@
         <h1 class="dropcap">The Rock Market</h1>
         <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
         <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
-
-            <img src="images/stones2133-w9.jpg" alt="many stones">
-            <img src="images/stones2163-w9.jpg" alt="fewer bigger stones">
-            <img src="images/rocks.png" alt="big rock and camping">
-        
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/stones2133-w9.jpg">
+            <source media="(min-width:600px)" srcset="images/stones2163-w9.jpg">
+            <img src="images/rocks.png" alt="Flowers">
+        </picture>
     </header>
 
     <nav>
@@ -38,7 +90,49 @@
             <li> <a href="the-agenda.html">Rock  Agenda</a> </li>
             <li> <a href="rock-location.html">Rock Location</a> </li>
             <li> <a href="rock-goals.html">Rock Goals</a> </li>
-        </ul>  
+        </ul>
+        <input type="button" Value="Press" onClick="myFunction()">
+        <br>
+        <br>
+        <input type="button" Value="Press 2" onClick="myFunction1()">
+        <br>
+        <br>
+        <form name="alertform">
+            Enter your name:
+            <input type="text" name="yourname">
+            <input type="button" value="Go" onClick="myFunction2()">
+        </form>
+        <br>
+        <br>
+        <a href="week9-ponder-prove.html" onMouseover="myFunction3()">
+                My Page 2</a>
+        <br>
+        <br>
+        <div onmouseover="myFunction5a(this)" onmouseout="myFunction5b(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;">Hello</div>
+        <br>
+        <br>
+        <p id="js">
+            This is my first time working with JavaScript
+        </p>
+        <button type="button" onClick="myFunction4()">Click Me!</button>
+        <hr>
+        <br>
+        <br>
+        <p>
+            This is using other events using JavaScript with different events
+        </p>
+        <input type="text" id="js2" onfocus="myFunction6a(this)" onblur="myFunction6b(this)">
+        <br>
+        <br>
+        <p oncopy="myFunction7()">Try to copy this text</p>
+        <br>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <br>
+        <input type="text" oncopy="myFunction10()" value="Try to copy this text">
+        <br>
+        <br>
     </div>
 
     <main>

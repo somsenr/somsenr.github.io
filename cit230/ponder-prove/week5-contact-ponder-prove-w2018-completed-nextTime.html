@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>week11-contact-ponder-prove.html</title>
+    <link rel="stylesheet" type="text/css" href="/css/screen.css" media="screen">
+    <script type="text/javascript">
+        function EmailLink() {
+            var emailAdd = document.getElementById("eml").value;
+            var emailCC = document.getElementById("cc").value;
+            var emailSub = document.getElementById("subject").value;
+            var myName = document.getElementById("lName").value;
+            var myEmail = document.getElementById("email").value;
+            var emailBody = document.getElementById("comment").value;
+
+            window.open("mailto:" + emailAdd + '?cc=' + emailCC + '&subject=' + emailSub + '&body=' + emailBody, '_self');
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Contact Me</h1>
+    <form>
+        <fieldset>
+            <legend>Please Complete All Fields</legend>
+            <ul>
+                <li>
+                    <label for="eml">Email Address you are emailing:</label>
+                    <input type="email" id="eml" size="44" placeholder="Please enter the email address" required>
+                </li>
+                <br>
+                <li>
+                    <label for="cc">CC Address:</label>
+                    <input type="email" id="cc" size="44" placeholder="Please enter the cc address" required>
+                </li>
+                <br>
+                <li>
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" placeholder="Please enter your First Name" size="30">
+                </li>
+                <br>
+                <li>
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" placeholder="Please enter your Last Name" size="30">
+                </li>
+                <br>
+                <li>
+                    <label for="subject">Subject of the Message:</label>
+                    <input type="text" name="subject" id="subject" size="50" placeholder="Please enter the subject" size="30">
+                </li>
+               
+                <br>
+                <li>
+                    <label>Do you like this website?</label>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="likeit" value="Yes" checked="checked" />
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="likeit" value="No">
+                    <label for="notsure">Not Sure</label>
+                    <input type="radio" id="notsure" name="likeit" value="NotSure"> 
+                </li>
+                <br>
+                <li>
+                    <label for="range">Please rank how much you like the website:</label>
+                    <input type="range" id="range" min="1" max="10" value="5">
+                </li>
+                <br>
+                <li>
+                    <label>Select your major:</label>
+                    <br>
+                    <label for="cit">Computer Information Technology</label>
+                    <input type="checkbox" id="cit" value="Computer Information Technology">
+                    <br>
+                    <label for="acct">Accounting</label>
+                    <input type="checkbox" id="acct" value="Accounting">
+                    <br>
+                    <label for="bm">Business Management</label>
+                    <input type="checkbox" id="bm" value="Business Management">
+                    <br>
+                    <label for="com">Communication</label>
+                    <input type="checkbox" id="com" value="Communication">
+                    <br>
+                    <label for="econ">Economics</label>
+                    <input type="checkbox" id="econ" value="Economics">
+                </li>
+                <br>
+                <li>
+                    <label for="how">How did you find us?</label>
+                    <select id="how">
+                        <option value="">--Please Select--</option>
+                        <option>Google</option>
+                        <option>Yahoo</option>
+                        <option>Link from a website</option>
+                        <option>Word of mouth</option>
+                        <option>Other</option>
+                    </select>
+                </li>
+                <br>
+                <li>
+                    <label for="age">Your Age</label>
+                    <input type="number" id="age" placeholder="Please enter your age">
+                </li>
+                <br>
+                <li>
+                    <label for="comment">Message:</label>
+                </li>
+                <br>
+                <textarea id="comment" cols="40" rows="10" placeholder="Please type your message" required></textarea>
+                <br>
+                <label for="submit">&nbsp;</label>
+                <br>
+                <button onclick="EmailLink()">Send Email</button>
+                <br>
+                <input type="reset" value="Reset">
+            </ul>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

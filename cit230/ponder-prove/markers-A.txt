@@ -1,6 +1,5 @@
 const markers = [
-{
-  "markers": [
+
     {
       "name": "Rixos The Palm Dubai",
       "position": [25.1212, 55.1535],
@@ -15,5 +14,5 @@ const markers = [
     }
         ];
         return markers;
-      }
-      ]
+ 
+    

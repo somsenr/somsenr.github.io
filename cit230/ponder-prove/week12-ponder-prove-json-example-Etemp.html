@@ -3,9 +3,11 @@
   <head>
    <title>Dubai Hotels</title>
   </head>
-
+ 
   <body onload = "loadMap()">
+      <div id="demo"></div> 
     <h2>Dubai Hotels</h2>
+     
     <div id = "map" style = "width:640px; height:480px;"></div>
       <script>
 function getJSONMarkers(){
@@ -14,7 +16,7 @@ function getJSONMarkers(){
           xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-            
+          
             
 //          var xmlhttp = new XMLHttpRequest();
 //xmlhttp.onreadystatechange = function() {
@@ -43,11 +45,15 @@ function getJSONMarkers(){
             
             
             
-//        document.getElementById("demo").innerHTML = myObj.name;
+//        document.getElementById("demo").innerHTML = "test1";
              }
+//              document.getElementById("demo").innerHTML = "test2";
+              document.getElementById("demo").innerHTML = marker.name;
             };
-            xmlhttp.open("GET", "markers-A.txt", true);
+//    document.getElementById("demo").innerHTML = "test3";
+            xmlhttp.open("GET", "markers-B.txt", true);
             xmlhttp.send();  
+//     document.getElementById("demo").innerHTML = myObj.name[0]; 
 // ];               
 return myObj;          
 }
@@ -92,5 +98,7 @@ return myObj;
         }
       </script>
       <script src = "https://maps.googleapis.com/maps/api/js"></script>
+      
+       
   </body>
 </html>

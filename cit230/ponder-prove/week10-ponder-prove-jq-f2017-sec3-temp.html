@@ -7,12 +7,19 @@
     <title>week10-ponder-prove-completed-jq</title>
     <link href="../css/week10.css" rel="stylesheet" type="text/css">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
 
     <script>
-        $(document).ready(function () {
-            $("#p").click(function () {
+//        jQuery(function($){
+//        $(document).ready(function () {
+         (function($) {
+
+    
+
+   
+        
+        $("#p").click(function () {
                 alert("Hello, this is a paragraph");
             });
 
@@ -20,10 +27,10 @@
                 alert("Hello, this is a paragraph");
             });
 
-          $("#enterName").click(function(){
-            alert("hello " + document.alertform.yourname.value + " please type your fullname");
-          });
-            
+           $("#enterName").click(function() {
+                alert("Hello " + document.alertform.yourname.value + " please type in your fullname");
+           });
+      
             $("#major").mouseenter(function () {
                 alert("Hello " + document.alertform.yourname.value + " make sure you select CIT!!!");
             });
@@ -62,7 +69,8 @@
             $("#flip").dblclick(function () {
                 $("#panel").slideUp("slow");
             });
-        });
+//        });
+         }(jQuery));
     </script>
 
 </head>
@@ -133,7 +141,7 @@
             <br>
             <ul>
                 <li>
-                    <label id="major" for="cit">Computer Information T  echnology</label>
+                    <label id="major" for="cit">Computer Information Technology</label>
                     <input type="checkbox" id="cit" value="Computer Information Technology" checked>
                 </li>
                 <br>
@@ -186,7 +194,7 @@
             <input id="p32" type="reset" value="Reset">
             <br>
             <br>
-            <button> Change the background color of all above buttons</button>
+            <button>Change the background color of all above buttons</button>
 
         </form>
     </div>

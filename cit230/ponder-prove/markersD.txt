@@ -1,7 +1,7 @@
 {
-    "hobby":"yes",
     "name":"John",
     "age":31,
+    "hobby":"yes",
     "pets":[
         { "animal":"dog", "name":"Fido" },
         { "animal":"cat", "name":"Felix" },

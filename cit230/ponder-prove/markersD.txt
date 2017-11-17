@@ -1,4 +1,5 @@
 {
+    "hobby":"yes",
     "name":"John",
     "age":31,
     "pets":[

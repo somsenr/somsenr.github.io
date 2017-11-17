@@ -16,9 +16,9 @@ function getJSONMarkers(){
           xmlhttp.onreadystatechange = function() {
 //              document.getElementById("demo").innerHTML = "test2";
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("demo").innerHTML = "test3";
+//            document.getElementById("demo").innerHTML = "test3";
         var myObj = JSON.parse(this.responseText);
-//         document.getElementById("demo").innerHTML = "test4";   
+         document.getElementById("demo").innerHTML = "test4";   
             
     
 //        document.getElementById("demo").innerHTML = myObj.pets[0].animal 
@@ -41,7 +41,7 @@ function getJSONMarkers(){
 //        document.getElementById("demo").innerHTML = myObj.name;
              }
             };
-            xmlhttp.open("GET", "markers-A.txt", true);
+            xmlhttp.open("GET", "markers-B.txt", true);
             xmlhttp.send();  
 // ];               
 return myObj;          

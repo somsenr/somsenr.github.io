@@ -1,4 +1,6 @@
-     {
+ {
+  "markers": [
+    {
       "name": "Rixos The Palm Dubai",
       "position": [25.1212, 55.1535],
     },
@@ -10,4 +12,5 @@
       "name": "Grand Hyatt",
       "location": [25.2285, 55.3273]
     }
-
+  ]
+}

@@ -9,18 +9,21 @@
     <div id = "map" style = "width:640px; height:480px;"></div>
     
       <script>
-
+function getJSONMarkers(){
+ const markers = [   
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = JSON.parse(this.responseText);
-        document.getElementById("demo").innerHTML = myObj.markers[0].name;
+        document.getElementById("demo").innerHTML = myObj.markers[1].location;
     }
-};
-xmlhttp.open("GET", "https://somsenr.github.io/cit230/ponder-prove/markers-B.txt", true);
+}
+];
+xmlhttp.open("GET", "https://somsenr.github.io/cit230/ponder-prove/markers-B-try.txt", true);
 xmlhttp.send();
 
-
+return markers;
+}
 
         // fake JSON call
 //        function getJSONMarkers() {

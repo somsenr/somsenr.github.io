@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <title>askyb - Load JSON File Locally by Javascript Without JQuery</title>
+        <script type="text/javascript" src="dataD.json"></script>
+<!--        <script type="text/javascript" src="myscript.js"></script>-->
+    </head>
+    <body onload="load()">
+        askyb - Load JSON File Locally by Javascript Without JQuery
+  
+        <div id = "map" style = "width:640px; height:480px;"></div>
+        
+        
+        
+        <script type="text/javascript" src="dataD.json"> </script> 
+        <script>
+
+        
+function load() {
+  
+//    <div id = "map" style = "width:640px; height:480px;"></div>
+    
+    
+    
+  // Initialize Google Maps
+          const mapOptions = {
+            center:new google.maps.LatLng(25.2048, 55.2708),
+            zoom: 11
+          }
+          const map = new google.maps.Map(document.getElementById("map"), mapOptions);   
+    
+    
+    
+    
+
+    
+    
+var mydata = JSON.parse(data);
+// alert(mydata[0].name);
+// alert(mydata[0].age);
+// alert(mydata[5].name);
+// alert(mydata[5].location[0]); 
+//    alert(mydata[5].location[1]);
+ 
+//for(hotel of hotelMarkers) {
+    for(x=0;x<3;x++){
+            let marker = new google.maps.Marker({
+              map: map,
+//              position: new google.maps.LatLng(hotel.location[0], hotel.location[1]),
+//              title: hotel.name
+              
+                position:new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
+              title: mydata[x].name
+                
+                
+                
+            })
+       }   
+    
+    
+    
+    
+    
+    
+    
+}
+   
+    
+    
+    
+    
+    
+        </script>      
+       <script src = "https://maps.googleapis.com/maps/api/js"></script> 
+    </body>
+</html>
+        
+        
+  

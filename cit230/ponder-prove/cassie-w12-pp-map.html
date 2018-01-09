@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>week12-ponder-prove-map-</title>
-    <link href="" rel="stylesheet" type="text/css">
+    <title>week12-ponder-prove-map</title>
+    <link href="../css/week12-complete.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -32,9 +32,9 @@
         </ol>
 
     </nav>
-    <div>
-        <div id="left-col">
-            <!--<h3>(the left column section)</h3>-->
+    
+        <div class="flex-container">
+            <div class="flex-item" id="left-col">
             <ul>
                 <li> <a href="rock-users.html">Rock Users</a> </li>
                 <li> <a href="the-agenda.html">Rock  Agenda</a> </li>
@@ -45,11 +45,11 @@
 
             <script>
                 function myMap() {
-                    var myCenter =
-                        var mapCanvas =
+                    var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
+                        var mapCanvas = document.getElementById("map");
                             var mapOptions = {
 
-                                center: ,
+                                center: new google.maps.LatLng(43.8231096, -111.79242369999997),
                                 zoom: 5,
                                 panControl: true,
                                 zoomControl: true,
@@ -59,28 +59,28 @@
                                 overviewMapControl: true,
                                 rotateControl: true
                             };
-                    var map =
-                        var marker =
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                        var marker = new google.maps.Marker ({
                             position: myCenter
                 });
-                marker.
+                marker.setMap(map);
 
 
                 // Zoom to 9 when clicking on marker
-                (marker, 'click', function () {
-                        var pos =
+                google.maps.event.addListener(marker, 'click', function () {
+                        var pos = map.getZoom();
                             map.setZoom(9);
                         map.setCenter(marker.getPosition());
-                        window. {
+                        window.setTimeout(function () {
                             map.setZoom(pos);
                         }, 3000);
                 });
                 }
             </script>
 
-            <script src="https://maps.googleapis.com/maps/api/js?key=<put in your key>&callback=myMap"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCViBg6T8PGabV2hPfQrse9AXONspSgzyY&callback=myMap"></script>
         </div>
-        <main>
+        <main class="flex-item">
             <!--<h3>(the middle column)</h3>-->
             <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
             <figure><img src="images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks">
@@ -89,7 +89,7 @@
             
             <br>
         </main>
-        <aside class="introduction">
+        <aside class="flex-item" class="introduction">
             <!--<h3>(the right column)</h3-->
             <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
             <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>

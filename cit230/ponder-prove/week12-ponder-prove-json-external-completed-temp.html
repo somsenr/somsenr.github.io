@@ -8,7 +8,7 @@
 <body onload="load()">
     <div id="map" style="width:640px; height:480px;"></div>
 
-    <script type="text/javascript" src="week12-data.json"></script>
+    <script type="text/javascript" src="dataD.json"></script>
 
     <script>
         function load() {
@@ -18,21 +18,21 @@
                 center: new google.maps.LatLng(25.2048, 55.2708),
                 zoom: 11
             }
-            const map = new google.maps.Map(document.getElementById("map"),mapOptions);
+            const map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
             var mydata = JSON.parse(data);
 
-             for (x=0;x<3;x++) {
+            for (x = 0; x < 3; x++) {
                 let marker = new google.maps.Marker({
                     map: map,
-                    position: new google.maps.LatLng(mydata[x].location[0],mydata.location[1]) ,
+                    position: new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
                     title: mydata[x].name
                 })
             }
         }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=<put in your key>&sensor=true"></script>
+    <script src = "https://maps.googleapis.com/maps/api/js"></script>
 
 </body>
 

@@ -1,10 +1,11 @@
+
 <!DOCTYPE HTML>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>week12-ponder-prove-map-</title>
-    <link href="" rel="stylesheet" type="text/css">
+    <title>week12-ponder-prove-map</title>
+    <link href="../css/week12.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -32,8 +33,8 @@
         </ol>
 
     </nav>
-    <div>
-        <div id="left-col">
+    <div class="flex-container">
+        <div class="flex-item" id="left-col">
             <!--<h3>(the left column section)</h3>-->
             <ul>
                 <li> <a href="rock-users.html">Rock Users</a> </li>
@@ -41,61 +42,63 @@
                 <li> <a href="rock-location.html">Rock Location</a> </li>
                 <li> <a href="rock-goals.html">Rock Goals</a> </li>
             </ul>
-            <div id="map" style="width:50%;height:300px"></div>
+            <div id="map" style="width:50%;height:300px">
+
+            </div>
 
             <script>
                 function myMap() {
-                    var myCenter =
-                        var mapCanvas =
-                            var mapOptions = {
+                    var myCenter = new google.maps.LatLng(43.8231096, -111.79242369999997);
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+                        center: new google.maps.LatLng(43.8231096, -111.79242369999997),
+                        zoom: 5,
+                        panControl: true,
+                        zoomControl: true,
+                        mapTypeControl: true,
+                        scaleControl: true,
+                        streetViewControl: true,
+                        overviewMapControl: true,
+                        rotateControl: true
+                    };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                    var marker = new google.maps.Marker({
+                        postition: myCenter
+                    });
 
-                                center: ,
-                                zoom: 5,
-                                panControl: true,
-                                zoomControl: true,
-                                mapTypeControl: true,
-                                scaleControl: true,
-                                streetViewControl: true,
-                                overviewMapControl: true,
-                                rotateControl: true
-                            };
-                    var map =
-                        var marker =
-                            position: myCenter
-                });
-                marker.
+                    marker.setMap(map);
 
-
-                // Zoom to 9 when clicking on marker
-                (marker, 'click', function () {
-                        var pos =
-                            map.setZoom(9);
+                    google.maps.event.addListener(marker, 'click', function() {
+                        var pos = map.getZoom();
+                        map.setZoom(9);
                         map.setCenter(marker.getPosition());
-                        window. {
+                        window.setTimeout(function() {
                             map.setZoom(pos);
                         }, 3000);
-                });
+                    });
                 }
+
             </script>
 
-            <script src="https://maps.googleapis.com/maps/api/js?key=<put in your key>&callback=myMap"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDamRIBhq4OH5BtYDEFBO313e0zYMS3jK4&callback=myMap"></script>
         </div>
-        <main>
+        <main class="flex-item">
             <!--<h3>(the middle column)</h3>-->
             <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
-            <figure><img src="images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks">
-            <!--                <figcaption class="firstsentence">Rocks are great to view from a ship!</figcaption>-->
+            <figure ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../images/rock-love.jpg" alt="photo of a person looking off a ship" title="enjoying computing and cruising while looking at rocks" draggable="true" ondragstart="drag(event)" ondragover="allowDrop(event)" id="drag1">
+                <!--                <figcaption class="firstsentence">Rocks are great to view from a ship!</figcaption>-->
             </figure>
-            
+
             <br>
         </main>
-        <aside class="introduction">
+        <aside class="flex-item">
             <!--<h3>(the right column)</h3-->
             <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
             <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
             <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
             <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
 
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
         </aside>
     </div>
@@ -109,11 +112,18 @@
             <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
         </ul>
     </footer>
-    
+
     <style>
-        #div2 {float: left;width: 100px;height: 35px;margin: 10px;padding: 10px;}
+        #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+        }
+
     </style>
-    
+
     <script>
         function allowDrop(ev) {
             ev.preventDefault();
@@ -128,8 +138,9 @@
             var data = ev.dataTransfer.getData("text");
             ev.target.appendChild(document.getElementById(data));
         }
+
     </script>
-    
+
 </body>
 
 </html>

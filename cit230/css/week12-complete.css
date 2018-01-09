@@ -9,7 +9,7 @@
            
             main b{color:red;font-size:36px;margin-left:50px;}
             main figure {width:194px;height:260px;}
-                       
+/*aside div {border:solid thin;}           */
             footer {color:rgb(0%,100%,0%);} 
             footer ul{margin-top:0;} 
             footer ul li {display:inline;padding-right:1em;}

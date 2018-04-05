@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>the-five-divs-flex-3-2-%</title>
+    <style type="text/css">
+        
+    .grid-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+  grid-gap: 30px 20%;
+  background-color: #2196F3;
+  padding:20%;
+        
+        
+        
+        
+       
+        
+}    
+        
+ .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20% 0%;
+  font-size: 30px;
+     
+}
+        
+.item3 {
+/*
+  grid-row-start: 1;
+  grid-row-end: 3;
+*/
+    
+    grid-area: 1 / 2 / 3 / 3;
+    
+    
+    
+}        
+        
+        
+        
+        
+/*
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 40%;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+*/
+/*
+        .flex-item {
+            background-color: cornflowerblue;
+            width: 35%;
+            height: 100px;
+            margin: 10px;
+        }
+*/
+    </style>
+</head>
+
+<body>
+    
+   
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+</div> 
+
+<!--
+    <div class="flex-container">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div>
+        <div class="flex-item">flex item 4</div>
+        <div class="flex-item">flex item 5</div>
+
+
+    </div>
+-->
+
+</body>
+ 

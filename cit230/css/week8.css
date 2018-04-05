@@ -1,4 +1,5 @@
-            body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }
+
+            body {margin:0;background-image: url("../ponder-prove/images/garden.jpg");background-repeat:repeat;background-position:center top;background-attachment:fixed;  }
             header {border:solid thin; line-height:50%;}    
 
             
@@ -6,7 +7,7 @@
             nav ol {text-align:center}
             nav ol#rocks li {display:inline;padding:1em;}
             nav ul li {display:list-item;}
-           
+            div#left-col ul li {list-style-type: hiragana}
             main b{color:red;font-size:36px;margin-left:50px;}
             main img {height:20%; width:20%;}
                        
@@ -44,13 +45,13 @@
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
-            div#left-col{}
-
-            main {}
-
-            aside{}  
-
-            footer {clear:left;position:fixed;text-align:center;width:100%;bottom:0px;}
+           .flex-container {display:flex;width: 100%; }
+			
+            .flex-item {width: 100%; border:solid thin; }
+			div#left-col {height:3000px;}
+			main {height:3000px;}
+			aside {height:3000px;}		
+            footer{position:fixed;bottom:0px;width:100%;border:solid medium black;text-align:center;}	
 
             /*apply colors to look like ppt*/
             

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Load JSON File Locally by Javascript Without JQuery</title>
+</head>
+
+<body onload="load()">
+    <div id="map" style="width:640px; height:480px;"></div>
+
+    <script type="text/javascript" src="https://somsenr.github.io/cit230/ponder-prove/dataD.json"></script>
+
+    <script>
+        function load() {
+
+            // Initialize Google Maps and load the data
+            const mapOptions = {
+                center: new google.maps.LatLng(25.2048, 55.2708),
+                zoom: 11
+            }
+            const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            var mydata = JSON.parse(data);
+
+            for (x = 0; x < 3; x++) {
+                let marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(mydata[x].location[0], mydata[x].location[1]),
+                    title: mydata[x].name
+                })
+            }
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ0PrYQxrlmCW-g8waf2Prw2cicpZwTeo&sensor=true"></script>
+
+</body>
+
+</html>

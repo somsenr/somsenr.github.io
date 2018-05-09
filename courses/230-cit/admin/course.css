@@ -1,0 +1,165 @@
+/********************************************************
+    The purpose of course.css is to house only the css
+    specific to an individual course. The online.css
+    houses all the default template formatting.
+********************************************************/
+/* DO NOT DELETE OR MODIFY THIS IMPORT */
+@import url("https://content.byui.edu/integ/gen/599082e0-3e89-4fd9-ac69-2615865d63c7/0/online.css");
+
+/* Add Course Specific css Below */
+
+html {
+	background: -webkit-radial-gradient(ellipse, #b3c186 0%, #616c3c 100%) fixed;
+	background: radial-gradient(ellipse, #b3c186 0%, #616c3c 100%) fixed;
+}
+
+h1 {
+	color: #384845;
+}
+
+h2 {
+	color: #0a7468;
+}
+
+h3 {
+	color: #ba582c;
+}
+
+h4 {
+	color: #0a7468;
+}
+
+h5 {
+	color: #ba582c;
+}
+
+a {
+	color: #af5329;
+	border-bottom: 2px solid #af5329;
+}
+
+a:hover {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+a:visited {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+#footer {
+	color: #ffffff;
+	background-color: #3c7f77;
+}
+
+/********************************************
+    SPLASH PAGE STYLING
+*********************************************/
+
+.splash #article {
+	color: #f5f5f5;
+	background-color: #24655e;
+}
+
+.splash h1 {
+	color: #fafafa;
+}
+
+.splash h2 {
+	color: #94f3f5;
+}
+
+.splash h3 {
+	color: #f6cf8a;
+}
+
+.splash h4 {
+	color: #94f3f5;
+}
+
+.splash h5 {
+	color: #f6cf8a;
+}
+
+.splash a {
+    color: #f6cf8a;
+	border-bottom: 2px solid #f6cf8a;
+}
+
+.splash table a,
+.splash .callout a {
+	color: #af5329;
+	border-bottom: 2px solid #af5329;
+}
+
+.splash a:hover {
+	color: #e5cbf0;
+    border-bottom: 2px solid #e5cbf0;
+}
+
+.splash table a:hover,
+.splash .callout a:hover {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+.splash a:visited {
+	color: #e5cbf0;
+    border-bottom: 2px solid #e5cbf0;
+}
+
+.splash table a:visited,
+.splash .callout a:visited {
+	color: #7b4c8d;
+    border-bottom: 2px solid #7b4c8d;
+}
+
+.splash #footer {
+	color: #f5f5f5;
+	background-color: #1c4e49;
+}
+
+/********************************************
+    FEATURES STYLING
+*********************************************/
+
+/* Callout box */
+.callout {
+    color: #495321;
+    background: #e1e6cd;
+}
+
+/* Drop downs */
+.drop-down {
+    background: #24655e;
+}
+
+.drop-down:hover {
+    background: #29746c;
+}
+
+/* Rubric table */
+/* Column headings */
+.rubric tr:first-child th {
+	background-color: #24655e;
+}
+
+/* Row headings */
+.rubric th {
+    color: #333;
+    background-color: #b8cd6f;
+}
+
+/* Mouseover popups */
+#main .popup {
+    border-bottom: dotted 2px #24655e;
+}
+
+#main .popup span {
+    background: #24655e;
+}
+
+#main .popup:after {
+    border-color: #24655e transparent transparent transparent;
+}

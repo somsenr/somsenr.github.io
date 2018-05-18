@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>the-four-divs-absolute with good solution to border on right side</title>
+<style type="text/css">
+/*body {margin:0;}*/
+#wrapper {
+
+    border: solid 4px red;
+	height:500px;
+/*        width:100%;*/
+	position:relative;
+/*        overflow:hidden;*/
+
+	
+}
+
+#div1 {
+    border: solid thick black;;
+    font-size: 18px;
+	/*width:100%; don't need either way'*/
+	/*height:10%; dont' need etiehr way'*/
+	/*can just leave as div without any position or below*/
+        /*for this one because falls into normal flow right position*/
+        
+        /*position:absolute;*/
+	/*left:0%;
+        right:0%;*/
+        
+	
+  
+   
+}
+#div2 {
+    border: solid thick black;
+    font-size: 18px;
+	width:30%;
+	height:50%;
+	position:absolute;
+	left:10%;
+	top:28%
+	
+  
+  
+   
+}
+#div3{
+	 position:absolute; 
+	 border: solid thick black;
+    font-size: 18px;
+	width:30%;
+	height:50%;
+	right:10%;
+	top:28%; 
+  }
+  
+  #div4 {
+	
+      position:absolute;
+	border: solid thick black;
+    font-size: 18px;
+/*want to make border not go outside outer wrapper so do next 2*/
+    left:0%;
+    right:0%;
+/* dont need width:100%;*/
+     
+	height:10%;
+	top:85%;
+   
+  }
+</style>
+</head>
+<body>
+<p>this is a body para</p>
+<div id="wrapper">
+<p>this is s wrapper para</p>
+<div id="div1">
+<p>div1</p>
+</div>
+<div id="div2">
+<p>div2</p>
+</div>
+<div id="div3">
+<p>div3</p>
+</div>
+<div id="div4">
+<p>div4</p>
+</div>
+</div>
+</body>
+</html>

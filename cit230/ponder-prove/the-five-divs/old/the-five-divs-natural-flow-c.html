@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>the-five-divs-orig</title>
+<style type="text/css">
+#wrapper {
+   min-width: 780px;
+}
+
+#header {
+   background-color: #aaaaaa;
+   height: 60px;
+}
+
+#navigation_sidebar {
+   width: 130px;
+   float: left;
+   background-color: #cccccc;
+}
+
+#main_content { 
+   width: 60%;
+   float:left;
+   background-color: #cccccc;
+   margin: 0 20px;
+}
+
+#adspace {
+   width: 130px;
+   float: left;
+   background-color: #cccccc;
+}
+
+#footer {
+   clear: both;
+   background-color: #aaaaaa;
+   height: 50px;
+}
+
+p {
+   padding: 0 20px;
+}
+
+
+/* Styling the image */
+
+img {
+   float: left;
+   border: 1px solid black;
+   margin: 20px 10px 10px 20px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+   <div id="header">
+      <h1>Three-column layout example</h1>
+   </div>
+      
+   <div id="navigation_sidebar">
+      <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Articles</a></li>
+         <li><a href="#">Tour map</a></li>
+         <li><a href="#">Photos</a></li>
+         <li><a href="#">Contact</a></li>
+      </ul>
+   </div>
+   
+   <div id="main_content">
+      <img src="weird_sign.jpg" alt="A very strange sign we saw on holiday in Australia, of a cow being electrocuted as it runs a car over, or something." width="240" height="205">
+
+      <p>This is an example of a floated image. An image element is placed above several paragraphs of text. The image has been given an <code>alt</code> attribute to explain what it is for accessibility, and <code>width</code> and <code>height</code> attributes to provide a placeholder space as the image loads (or if it is not available for some reason). The image is then floated using the line <code>float: left;</code> in the CSS.</p>
+
+      <p>In case you are wondering, the image is a very strange sign I saw while on holiday with my family in Australia. It is warning passersby about a cow being electrocuted as it runs a car over, or something...?!?!</p>
+
+   </div>
+   
+   <div id="adspace">
+      <p>Your adverts could appear here.</p>
+   </div>
+      
+   <div id="footer">
+      <p>All content is copyright <em>Some Big Corporation(tm)</em> 2000-2010. All rights reserved.</p>
+   </div>
+
+</body>
+</html>

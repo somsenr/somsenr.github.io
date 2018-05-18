@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>the-five-divs-absolute-3-2-%</title>
+        <style type="text/css">
+           /* div {position:absolute;width:20%;height:20%;border:solid thin;font-size:18px;}*/
+			/*.flex-container {display: -webkit-flex;display: flex; -webkit-align-items: stretch; align-items: stretch; }*/
+
+			/*.flex-item {width: 100%; border:solid thin; }*/
+			           
+					   
+		   /* #div1 {top:10%; left:20%;}
+            #div2 {top:40%; left:20%;}
+            #div3 {top:70%; left:20%;}
+            #div4 {top:10%; right:20%;}
+            #div5 {top:40%; right:20%;}*/
+			
+		.flex-container {
+    display: -webkit-flex;
+    display: flex;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+}
+
+.item1 {margin-left:10%; margin-top:0%}
+.item2 {margin-left:50%;margin-top:-44%}
+.item3 {margin-left:10%}
+.item4 {margin-left:50%; margin-top:-44%}
+.item5 {margin-left:10%}
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item item1">flex item 1</div>
+  <div class="flex-item item2">flex item 2</div>
+  <div class="flex-item item3">flex item 3</div>
+  <div class="flex-item item4">flex item 4</div>
+  <div class="flex-item item5">flex item 5</div>
+  
+  
+</div>
+
+</body>

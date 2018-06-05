@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>the-five-divs-flexbox-2-3-%</title>
+    <style type="text/css">
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        
+        .space {
+            padding-left: 700px
+        }
+        
+        .space5 {
+            grid-area: 3 / 2 / 3 / 3;
+        }
+        /*space5 will start on row-line 3 and column-line 2, and end on row-line 3 column-line 3*/
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5 space5">5</div>
+    </div>
+
+</body>
+
+</html>

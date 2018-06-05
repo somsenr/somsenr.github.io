@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>week7-ponder-prove</title>
-        <style>
+        <style type="text/css">
             body {margin:0;}
-            header {border:solid thin; line-height:50%;}    
+            header {border:solid thin; line-height:50%;margin-top:15px;}    
             
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
             nav ol {text-align:center;}
@@ -17,7 +17,7 @@
                        
             footer {color:rgb(0%,100%,0%);} 
             footer ul{margin-top:0;} 
-            footer ul li {display:inline;padding-right:1em;}
+            footer ul li {display:inline;padding:1em;}
            
             h1 {color:green;text-align:center;font-family:cursive,arial;font-size:x-large;font-style:italic;font-variant:small-caps;font-weight: bold;}
             h1.dropcap::first-letter {font-weight: bold; font-size: 1.2em; color:yellow;}
@@ -48,38 +48,38 @@
             a:visited {color:rgb(0%,100%,0%);} 
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
-            
-            header { grid-column: 1 / span 3;grid-row: 1;}
 
-            nav {grid-column: 1 / span 3;grid-row: 2;}
+            div#left-col{}
 
-            footer {grid-column: 1 / span 3;grid-row: 4;        position:fixed;bottom:0px;width:100%;}
-                       
-            .grid-container {display: grid;background-color: #2196F3;padding: 0px;}
+            main {}	
+
+            aside{}  
+
+            footer {}	
 
             /*apply colors to look like ppt*/	
             header {background-color:#9F9;} 
             nav{background-color:yellow;}
-            div#left-col{background-color:#F66;height:3000px;}
-            main{background-color:green;height:3000px;}
+            div#left-col{background-color:#F66;}
+            main{background-color:green;}
             div#right-col{background-color:green;}
-            aside{background-color:teal;height:3000px;}
+            aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue;}			
+            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}			
 
             /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
         </style>    
     </head>
-
+   
     <body>
-        <div class="grid-container">
+       
         <header>
             <h1 class="dropcap">The Rock Market</h1>
             <p>(insert banner image)</p>
             <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
-            <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>      
+            <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>  
         </header>
-            
+     
         <nav>
             <ol>
                 <li> <a href="foods-using-rocks.html">Foods Using Rocks</a> </li>
@@ -89,7 +89,7 @@
                 <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
                 <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
             </ol>
-        </nav>
+            </nav>
         
         <div id="left-col">
             <ul>
@@ -99,27 +99,27 @@
                 <li> <a href="rock-goals.html">Rock Goals</a> </li>
             </ul>
         </div>
-
+        
         <main>
-            <p>Do you love <b>rocks</b> do you?</p>
+            <p>Do you love <b>rocks </b> do you?</p>
         </main>
-
+       
         <aside>
             <p><a href="http://rocks-for-dummies.html">Rocks for dummies</a></p>
             <p><a href="http://rocks-for-nerds.html">Rocks for nerds</a></p>
             <p><a href="http://rocks-for-gurus.html">Rocks for gurus</a></p>
             <p><a href="http://rocks-for-all.html">Rocks for all</a></p>
         </aside>
-       
+      
         <footer>
             <ul>
                 <li class="fs2em"><a href="contactinfo.html">&copy;Contact Information</a></li>
                 <li class="fs2ex"><a href="../contacts1/contact-info.html">Contact Information</a></li>
                 <li class="fs24px"><a href="contacts2/contact-info.html">Contact Information</a></li>
                 <li class="fs120prcnt"><a href="contacts2/contact-info.html">Contact Information</a></li>
-                <li class="fs24pt"><a href="week7-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
+                <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
             </ul>
         </footer>
-        </div>
+   
     </body>
 </html>

@@ -1,13 +1,13 @@
-            /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body{margin:0}
-            header {background-image:  url(../ponder-prove/images/stones2133.jpg);background-repeat:repeat;margin:-15px 0 -10px;}    
-
+body {margin:0;background-image: url(images/garden.jpg);background-repeat:no-repeat;background-position: left top;background-attachment:fixed;}
+            header {border:solid thin; line-height:50%;}    
+            
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
             nav ol {text-align:center}
             nav ol#rocks li {display:inline;padding:1em;}
             nav ul li {display:list-item;}
-            div#left-col ul li {list-style-type: hiragana}
+            div#left-col ul li{list-style-type:hiragana;}
             main b{color:red;font-size:36px;margin-left:50px;}
-            main img {height:20%; width:20%;}
+            main img {height:10%;width:10%;}
                        
             footer {color:rgb(0%,100%,0%);} 
             footer ul{margin-top:0;} 
@@ -20,8 +20,8 @@
            
             h4{color: green;}
            
-            table {color:red; width:50%;font-size:50%; border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;padding:1.5em;border-radius:4em 4em 4em 6em/4em 6em 8em 2em;transition-property: width;transition-duration:2s;}
-	        table:hover {width:75%;}
+            table {color:red; width:50%;font-size:50%; border:5px solid red;padding:5px;margin-left:auto;margin-right:auto;padding:1.5em;border-radius:4em 4em 4em 6em/4em 6em 8em 2em;transition-property: width; transition-duration: 2s;}
+            table:hover {width:75%}
             caption {font-size:1.5em;text-align:left;color:rgb(7,8,45)}
             th {letter-spacing: -.25em;border:1px solid black;}
             td {text-decoration: line-through;}
@@ -43,23 +43,20 @@
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
-             .flex-container {display:flex;width: 100%; }
-			
-            .flex-item {width: 100%; border:solid thin; }
-			div#left-col {height:3000px;}
-			main {height:3000px;}
-			aside {height:3000px;}		
-            footer{position:fixed;bottom:0px;width:100%;border:solid medium black;text-align:center;}	
+            div#left-col{}
 
-            /*apply colors to look like ppt*/
+            main {}
 
-            header {background-color:#9F9;} 
+            aside{}  
+
+            footer {clear:left;position:fixed;text-align:center;width:100%;bottom:0px;}
+
+            /*apply colors to look like ppt*/	
+            /*header {background-color:#9F9;} 
             nav{background-color:yellow;}
             div#left-col{background-color:#F66;}
             main{background-color:green;}
             div#right-col{background-color:green;}
             aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue;}			
-
-div#left-col, main, aside {font-size:1vw }
+            body {background-color:#DDF; border: 1px solid blue;}*/			

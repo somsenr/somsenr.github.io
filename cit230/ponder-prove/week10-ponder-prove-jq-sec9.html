@@ -4,65 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week10-ponder-prove-completed-js</title>
+    <title>week10-ponder-prove-completed-jq</title>
     <link href="../css/week10.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-        function myVerify() {
-            document.write("<h1>are you sure you want to submit this? if so hit the back button and then hit the submit button</h1>");
-        }
 
-        function mySendData() {
-            window.alert("This is the Send Data button and hello " + document.alertform.yourname.value + " backend code would take it from here");
-        }
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
 
-        function myEnterName() {
-            window.alert("Hello " + document.alertform.yourname.value);
-        }
+    <script>
+        $(document).ready(function () {
+            $("#p").click(function () {
+                alert("Hello, this is a paragraph");
+            });
 
-        function myDisplayName() {
-            window.alert("Hello " + document.alertform.yourname.value);
-        }
+            $("#p1").mousedown(function () {
+                alert("Hello, this is a paragraph");
+            });
 
-        function myRollOver(obj) {
-            obj.innerHTML = "Goodbye " + document.alertform.yourname.value;
-        }
+           
+            
+            
 
-        function myRollOut(obj) {
-            obj.innerHTML = "Hello " + document.alertform.yourname.value;
-        }
+            $().(function () {
+                alert("Hello " + document.alertform.yourname.value + " make sure you select CIT!!!");
+            });
 
-        function myChangeFont() {
-            var x = document.getElementById("how"); // Find the element with id="js"
-            x.style.fontSize = "25px"; // Change the font size 
-            x.style.color = "#FF0000"; // Change the color
-        }
+            $().(function () {
+                    $()("background-color", "blue");
+                },
+                function () {
+                    $(this).css("background-color", "red");
+                });
 
-        function myChangeFontBack() {
-            var x = document.getElementById("how"); // Find the element with id="js"
-            x.style.fontSize = "1em"; // Change the font size 
-            x.style.color = "#000000"; // Change the color
-        }
+            $().hover(function () {
+                    $(this)(" YES! ");
+                },
+                function () {
+                    $(this).append(" I MEAN AFFIRMATIVE! ");
+                });
 
-        function myChangeColorIn(obj) {
-            obj.value = '';
-            obj.style.backgroundColor = "pink";
-            obj.style.color = "green";
-            obj.style.fontSize = "25px";
-        }
+            $().(function () {
+                $(this).css("background-color", "green");
+            });
+            $("#colorHide")(function () {
+                $(this)("slow");
+            });
 
-        function myChangeColorOut(obj) {
-            obj.style.backgroundColor = "yellow";
-            obj.style.color = "red";
-            obj.style.fontSize = "8px";
-        }
+            $().click(function () {
+                $("#p30").css("background-color", "yellow");
+                $("#p31").css("background-color", "purple");
+                $("#p32").css("background-color", "green");
+            });
 
-        function myNoCopy() {
-            window.alert("hey don't copy me!");
-        }
+            $().click(function () {
+                $().("slow");
+            });
 
-        function myDoCopy() {
-            document.getElementById("demo").innerHTML = "You copied text!"
-        }
+            $("#flip").dblclick(function () {
+                $("#panel").slideUp("slow");
+            });
+        });
     </script>
 
 </head>
@@ -74,20 +74,20 @@
         <p class="sitebranding">for all your rock needs visit <a href="http://the-rock-market.com">the Rock Market</a></p>
         <h2>(tagline) Rock Success is in the <span class="docintro">Eyes of the Beholder &amp; Me!</span></h2>
 
-    
-    
-    
-    
+        
+        
+        
+        
     </header>
 
     <nav>
         <ol id="rocks">
-            <li>  <a href="foods-using-rocks.html" class="w3-bar-item w3-button w3-mobile">Foods Using Rocks</a></li>
-            <li> <a href="history-of-rocks.html" class="w3-bar-item w3-button w3-mobile">History of Rocks</a></li>
-            <li><a href="rock-therapy.html" class="w3-bar-item w3-button w3-mobile">Rock Therapy</a></li>
-            <li><a href="rock-clothes.html" class="w3-bar-item w3-button w3-mobile">Rock Clothes</a> </li>
-            <li><a href="rock-jewelry.html" class="w3-bar-item w3-button w3-mobile">Rock Jewelry</a> </li>
-            <li> <a href="week4-ponder-prove-anchors.html#fx" class="w3-bar-item w3-button w3-mobile">Featured Market Items</a></li>
+            <li> <a href="foods-using-rocks.html">Foods Using Rocks</a> </li>
+            <li> <a href="history-of-rocks.html">History of Rocks</a> </li>
+            <li> <a href="rock-therapy.html">Rock Therapy</a> </li>
+            <li> <a href="rock-clothes.html">Rock Clothes</a></li>
+            <li><a href="rock-jewelry.html">Rock Jewelry</a></li>
+            <li> <a href="week4-ponder-prove-anchors.html#fx">Featured Market Items</a> </li>
         </ol>
     </nav>
     <div class="flex-container">
@@ -105,15 +105,15 @@
 
             <label for="yourname">Enter Your Full Name</label>
             <br>
-            <input type="text" id="yourname" name="yourname" placeholder="Please enter your full name" required>
-            <input type="button" value="Go" onClick="myEnterName()">
+            <input type="text" id="enterName" name="yourname" placeholder="Please enter your full name" required>
+            <br>
+            <br>  
+            <div>Click to slide down panel; double click to close</div>
+            <div>
+                <div style="background-color:#D94A38; width:20%; height:100px; margin-left:auto;margin-right:auto;">Hello</div>
+            </div>
             <br>
             <br>
-
-            <div onmouseover="myRollOver(this)" onmouseout="myRollOut(this)" style="background-color:#D94A38; width:120px; height:20px; padding:40px;">Hello</div>
-            <br>
-            <br>
-
             <label>Do you like this website?</label>
             <label for="yes">Yes</label>
             <input type="radio" id="yes" name="likeit" value="Yes" checked="checked" />
@@ -131,7 +131,7 @@
 
             <label>Select your major:</label>
             <br>
-            <ul id="boxes">
+            <ul>
                 <li>
                     <label for="cit">Computer Information Technology</label>
                     <input type="checkbox" id="cit" value="Computer Information Technology" checked>
@@ -139,12 +139,12 @@
                 <br>
                 <li>
                     <label for="acct">Web Design & Development</label>
-                    <input type="checkbox" id="acct" value="Accounting">
+                    <input type="checkbox" id="acct" value="WDD">
                 </li>
                 <br>
                 <li>
                     <label for="bm">Computer Science</label>
-                    <input type="checkbox" id="bm" value="Business Management">
+                    <input type="checkbox" id="bm" value="CS">
                 </li>
                 <br>
                 <br>
@@ -160,8 +160,8 @@
                 <option>Other</option>
             </select>
             <br>
-            <button type="button" onClick="myChangeFont()">Click for bigger font!</button>
-            <button type="button" onClick="myChangeFontBack()">Click for default font!</button>
+            <!--<button type="button" onClick="myChangeFont()">Click for bigger font!</button>-->
+            <!--<button type="button" onClick="myChangeFontBack()">Click for default font!</button>-->
             <br>
             <br>
 
@@ -172,26 +172,26 @@
 
             <label for="comment">Message:</label>
             <br>
-            <textarea id="comment" cols="40" rows="10" placeholder="Please type your message" onfocus="myChangeColorIn(this)" onblur="myChangeColorOut(this)" oncopy="myNoCopy()" required></textarea>
+            <textarea cols="40" rows="10" onfocus="this.value='';this.onfocus=null" required>Please type your message</textarea>
             <br>
             <br>
 
             <label for="verify">&nbsp;</label>
-            <input type="button" Value="Verify" onClick="myVerify()">
+            <input type="button" Value="Verify">
 
             <label for="submit">&nbsp;</label>
-            <button type="submit" name="Submit" onClick="mySendData()">Submit</button>
+            <button type="submit" name="Submit">Submit</button>
 
             <label for="reset">&nbsp;</label>
             <input type="reset" value="Reset">
             <br>
             <br>
-
+            Change the background color of all above buttons
 
         </form>
     </div>
 
-        
+
     <main class="flex-item">
         <p style=font-weight:bold;color:yellow;font-size:24px;>Do you love <b>rocks </b> do you?</p>
         <p> The <strong>Rock Market</strong> is an all-inclusive <em>bouquet</em> of &quot;rocks&quot; at their best. A participant can merely just dabble in any of the assorted featured gems or can completely immerse into all of the luxurious benefits from each of the market items. Whether your fancy be tasting a specialty rock food or indulging in the exquisite rock jewelry or adorning those stylish rock clothes, you will always be happy that you are considered among the &ldquo;rock elite<sup>1</sup>&rdquo; among your friends and peers. Come join and begin your journey into rock heaven! See you soon! </p>
@@ -225,7 +225,7 @@
         <br>
         <br>
     </aside>
-    </div>
+    </div> 
     <footer>
         <!--<h3>(the footer section)</h3>-->
         <ul>
@@ -236,20 +236,6 @@
             <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
         </ul>
     </footer>
-
-
-    <script>
-        const boxes = document.getElementById('boxes');
-
-        boxes.addEventListener('click', function (evt) {
-            const target = evt.target;
-            if (target.hasAttribute('class')) {
-                target.removeAttribute('class');
-            } else {
-                target.setAttribute('class', 'selected');
-            }
-        });
-    </script>
 
 </body>
 

@@ -1,5 +1,5 @@
-            /*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/body{margin:0}
-            header {background-image:  url(../ponder-prove/images/stones2133.jpg);background-repeat:repeat;margin:-15px 0 -10px;}    
+/*body {margin:0;background-image: url(../ponder-prove/images/garden.jpg);background-repeat:repeat;background-position:center top;background-attachment:fixed;  }*/ body {margin:0;}
+    header {background-image:  url(../ponder-prove/images/stones2133.jpg);background-repeat:repeat;margin:-15px 0 -10px;}    
 
             nav {color:#00FF00; background-color:rgba(247,209,210,.5);border:solid thin green;text-indent:50px;} 
             nav ol {text-align:center}
@@ -43,7 +43,7 @@
             a:hover {background-color: white;}
             a:active {color: rgb(0,0,255);}  	
 
-             .flex-container {display:flex;width: 100%; }
+            .flex-container {display:flex;width: 100%; }
 			
             .flex-item {width: 100%; border:solid thin; }
 			div#left-col {height:3000px;}
@@ -53,13 +53,13 @@
 
             /*apply colors to look like ppt*/
 
-            header {background-color:#9F9;} 
+            header {background-color:#9F9;}
             nav{background-color:yellow;}
             div#left-col{background-color:#F66;}
             main{background-color:green;}
             div#right-col{background-color:green;}
             aside{background-color:blue;}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue;}			
+            body {background-color:#DDF; border: 1px solid blue;}		 
 
 div#left-col, main, aside {font-size:1vw }

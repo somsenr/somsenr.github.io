@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>media card</title>
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
+        color: white;
+      }
+      img {
+        max-width: 100%;
+      }
+      .card {
+        width: 320px;
+        box-shadow: 1px 1px 4px 1px #888;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #888;
+      }
+      span {
+        color: white;
+        float: right;
+      }
+      p, footer {
+        padding: 5px 15px;
+      }
+      footer {
+        padding-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <img src="https://loremflickr.com/320/240" alt="randon image from flickr">
+      <p>
+        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+      </p>
+      <footer>
+        <button class="viewButton">
+          View
+        </button>
+        <button class="editButton">
+          Edit
+        </button>
+        <span>9 mins</span>
+      </footer>
+    </article>
+  </body>
+</html>

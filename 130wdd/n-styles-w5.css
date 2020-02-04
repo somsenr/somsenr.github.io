@@ -1,0 +1,51 @@
+/*
+          gold: #E7C24F
+          red:  #A43312
+          blue: #396E94
+      */
+
+
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  background-color: salmon;
+  font-family: 'Rock Salt';
+  line-height: 1.25;
+  margin-bottom: -15px;
+}
+
+#content {
+  max-width: 960px;
+  // width: 90%;
+  margin: 0 auto;
+}
+
+.home-paragraph-3 {
+  text-align: center;
+}
+
+body {
+  background-color: #396e94;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav a {
+    color: #ee1010;
+  font-size:1.1em;
+} 
+
+main {
+  background-color: white;
+}
+
+h2, p, img {
+  padding:0.5em;
+}
+
+
+
+

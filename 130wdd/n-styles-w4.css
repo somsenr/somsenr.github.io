@@ -1,0 +1,45 @@
+/*
+          gold: #E7C24F
+          red:  #A43312
+          blue: #396E94
+      */
+
+
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  background-color: salmon;
+}
+
+#content {
+  max-width: 960px;
+    
+  margin: 0 auto;
+}
+
+.home-paragraph-3 {
+  text-align: center;
+}
+
+body {
+  background-color: #396e94;
+}
+
+nav a {
+    color: #ee1010;
+} 
+
+main {
+  background-color: white;
+}
+
+
+
+
+
+
+

@@ -184,6 +184,41 @@ footer {
   width: 48px;
 }
 
+.cp1-grid {
+ display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding: 1em;    
+}
+
+.cp1-grid p {
+    
+    padding:30px;
+}
+.cp1-top-left-image {
+ grid-column: 1/2;
+    grid-row:1;   
+    
+}
+
+.cp1-top-right-paragraph {
+ grid-column:2/3;
+    grid-row:1;   
+    
+}
+.cp1-middle-left-image {
+ grid-column: 1/2;
+    grid-row:2;   
+    
+}
+
+.cp1-middle-right-paragraph {
+ grid-column:2/3;
+    grid-row:2;   
+    
+}
+
+
 @media screen and (max-width: 550px) {
   .banner-box {
     display: block;

@@ -1,0 +1,24 @@
+w11-home-page-styled-header-on-side
+
+div id = content:
+
+max-width: 940px;
+height: 1000px;
+
+header:
+
+display: grid;
+
+turned off grid
+align-items: center;
+background-color: purple;
+width: 20%;
+height: 108%;
+
+
+main:
+
+
+width: 80%;
+margin-left: 20%;
+margin-top: -115%;

@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>w11-positioning-activity-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link rel="stylesheet" href="n-styles-final-2.css">-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .content1 {
+            width: 80%;
+            height: 500px;
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+
+                          
+        }
+
+        .content2 {
+            width: 80%;
+            height: 500px;
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px 150px;
+        }
+
+        .content3 {
+            width: 80%;
+            height: 500px;
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 150px 150px;
+        }
+
+        .red {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+        }
+
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+
+        }
+
+        .blue {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+        }
+
+        .red2 {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+
+        }
+
+        .green2 {
+            width: 100%;
+            height: 100%;
+            background-color: green;
+
+        }
+
+        .yellow2 {
+            width: 100%;
+            height: 100%;
+            background-color: gold;
+
+        }
+
+        .blue2 {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h2>Example 1</h2>
+    <p>Justify-content and align-content do not work since the grid is as big as the parent element.</p>
+    <div class="content1">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+    </div>
+    <h2>Example 2</h2>
+    <p>Justify-items and align-items do not work since the contents are as big as the grid cell they are in.</p>
+
+    <div class="content2">
+        <div class="red2"></div>
+        <div class="green2"></div>
+        <div class="yellow2"></div>
+        <div class="blue2"></div>
+    </div>
+    <h2>Example 3</h2>
+    <p>Both justify-content and align-content, and justify-items and align-items work.</p>
+
+
+    <div class="content3">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+    </div>
+</body>
+
+</html>
